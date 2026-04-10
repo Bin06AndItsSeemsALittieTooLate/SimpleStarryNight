@@ -148,6 +148,7 @@
 
 /* make the artist image cards circle (may break other things idk) */
 .main-cardImage-imageWrapper{
+  background-color: transparent;
   border-radius: 50%;
 }
 
