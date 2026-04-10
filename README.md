@@ -8,6 +8,18 @@ A theme derived from the [original StarryNight](https://github.com/spicetify/spi
 
 TBA
 
+## Installation
+
+### Manual
+
+- Create a folder named ``SimpleStarryNight`` where Spicetify is installed, under ``\spicetify\Themes``.
+- Download ``color.ini``, ``theme.js`` and ``user.css`` and put it in the newly created folder.
+- Run these commands in order:
+```
+spicetify config current_theme SimpleStarryNight
+spicetify apply
+```
+
 ## Recommended Extensions 
 
 TBA
