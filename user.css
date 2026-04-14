@@ -25,10 +25,6 @@
   width: var(--panel-width);
 }
 
-.main-topBar-background {
-  background-color: color-mix(in srgb, var(--spice-main) 75%, transparent) !important;
-}
-
 .Root__nav-bar {
   background-color: #00000000 !important;
 }
@@ -108,7 +104,7 @@
 
 .starrynight-bg-container {
   position: fixed;
-  z-index: 0;
+  z-index: 2;
   pointer-events: none;
   height: 100%;
   width: 100%;
@@ -132,8 +128,31 @@
 
 .bHqdRdxo4vtOizQq {
   opacity: clamp(0, calc(1 - (var(--scroll) / 0.32)), 1) !important;
-  height: 40vh
+  height: 38vh;
+  transform: scale(1.1);
 }
+
+/* background of top bar */
+.main-topBar-overlay,.main-topBar-background, .main-home-filterChipsSection {
+  background-image: linear-gradient(180deg, var(--spice-sidebar-alt), var(--spice-sidebar));
+  background-size: 100vw 100vh;
+  background-position: top -100% left;
+}
+
+/* track list after scrolling a bit */
+.Ltz8hFoxXpck1XAk {
+  background-image: linear-gradient(180deg, var(--spice-sidebar-alt), var(--spice-sidebar)) !important;
+  background-size: 100vw 100vh !important;
+  background-position: 0 var(--header-offset) !important;
+}
+/* open library on hover */
+.QTPPCyC4V18wBUZA:hover {
+  background-color: var(--background-elevated-base)
+}
+
+.main-home-filterChipsSection::after {
+  background-color: transparent !important;
+} 
 
 /* kill that annoying black gradient near the arrows on the home page */
 .search-searchCategory-contentArea::before,
@@ -147,14 +166,10 @@
 }
 
 /* make the artist image cards circle (may break other things idk) */
-.main-cardImage-imageWrapper{
+.main-cardImage-imageWrapper {
   background-color: transparent;
   border-radius: 50%;
-}
-
-/* track list header after scrolling a bit */
-.Ltz8hFoxXpck1XAk {
-  background-color: color-mix(in srgb, var(--spice-main) 75%, transparent) !important;
+  box-shadow: none;
 }
 
 .main-nowPlayingView-coverArtContainer {
@@ -163,20 +178,24 @@
 
 .lyrics-lyrics-container {
   --lyrics-color-active: var(--spice-text) !important;
-  --lyrics-color-inactive: var(--spice-subtext) !important;
-  --lyrics-color-passed: var(--spice-subtext) !important;
-  --lyrics-color-background: transparent !important;
+  --lyrics-color-inactive: var(--spice-text) !important;
+  --lyrics-color-passed: var(--spice-text) !important;
   --lyrics-color-messaging: var(--spice-text) !important;
 }
-
-/* transparent sidebar took forever */
-.Root__right-sidebar *::before {
-  background-color: transparent;
+.lyrics-lyricsContent-upcoming {
+  opacity: 0.7 !important;
 }
 
+/* the shadow to the left and top when scrolled down of the thumbnail in queue and library and the shadows under the images */
+.x-entityImage-imageContainer, .BEeVmHj340c0PYHe, .HFowbNOgNPgtZSE4, .main-entityHeader-image, .PromotionDefaultNativeImage-module_image-container__gQhJp {
+  box-shadow: none;
+}
+/* transparent sidebar took forever */
+.Root__right-sidebar *::before,
 .Root__right-sidebar *:not(.uWEu68slnCYemCug):not(.SCkPnrYn3xYsUf_i) {
   background-color: transparent;
 }
+
 .main-nowPlayingView-nowPlayingWidget {
   opacity: 0.88;
 }

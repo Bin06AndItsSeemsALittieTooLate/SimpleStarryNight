@@ -6,7 +6,9 @@ A theme derived from the [original StarryNight](https://github.com/spicetify/spi
 
 ## Screenshots
 
-TBA
+### Base
+
+![Base](assets\base.png "Base")
 
 ## Installation
 
@@ -19,7 +21,12 @@ TBA
 spicetify config current_theme SimpleStarryNight
 spicetify apply
 ```
-
+- To configure color scheme, run these commands in order:
+```
+spicetify config color_scheme "Your_color_scheme"
+spicetify update
+```
+- Replace ``"Your_color_scheme"`` with any scheme of your choice.
 ## Recommended Extensions 
 
 TBA

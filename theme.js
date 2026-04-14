@@ -99,3 +99,37 @@ waitForElement(['.Root__top-container'], ([topContainer]) => {
     });
   }
 });
+
+function updateOffsets() {
+  const topBar = document.querySelector('.main-topBar-background');
+  const nav = document.querySelector('.Root__globalNav');
+
+  if (!topBar || !nav) return;
+
+  // Get heights
+  const topBarHeight = topBar.offsetHeight;
+
+  // Get nav height
+  const navHeight = nav.offsetHeight;
+
+  // Combine
+  const totalOffset = topBarHeight + navHeight;
+
+  // Set CSS variable
+  document.documentElement.style.setProperty(
+    '--header-offset',
+    totalOffset * -1 + 'px'
+  );
+}
+
+// Run once
+updateOffsets();
+
+// Optional: update on resize
+waitForElement(
+  ['.main-topBar-background', '.Root__globalNav'],
+  () => {
+    updateOffsets();
+    window.addEventListener('resize', updateOffsets);
+  }
+);
