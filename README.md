@@ -10,6 +10,31 @@ A theme derived from the [original StarryNight](https://github.com/spicetify/spi
 
 ![Base](assets\base.png "Base")
 
+### Cotton Candy
+
+![Cotton Candy](assets\cotton_candy.png "Cotton Candy")
+
+### Forest
+
+![Forest](assets\forest.png "Forest")
+
+### Orange
+
+![Orange](assets\orange.png "Orange")
+
+### Sky
+
+![Sky](assets\sky.png "Sky")
+
+### Sunrise
+
+![Sunrise](assets\sunrise.png "Sunrise")
+
+## Prerequisites
+
+- [Spotify](https://www.spotify.com/us/download/windows/)
+- [Spicetify](https://github.com/spicetify)
+
 ## Installation
 
 ### Manual
