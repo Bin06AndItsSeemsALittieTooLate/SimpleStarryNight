@@ -3,9 +3,9 @@
         "name": "SimpleStarryNight",
         "description": "A theme derived from the original StarryNight, with most of the visual bugs fixed.",
         "preview": "assets/base.png",
-        "usercss": "https://cdn.jsdelivr.net/gh/Bin06AndItsSeemsALittieTooLate/SimpleStarryNight@master/user.css",
-        "schemes": "https://cdn.jsdelivr.net/gh/Bin06AndItsSeemsALittieTooLate/SimpleStarryNight@master/color.ini",
-        "include": ["https://cdn.jsdelivr.net/gh/Bin06AndItsSeemsALittieTooLate/SimpleStarryNight@master/theme.js"],
+        "usercss": "https://cdn.jsdelivr.net/gh/Bin06AndItsSeemsALittieTooLate/SimpleStarryNight@main/user.css",
+        "schemes": "https://cdn.jsdelivr.net/gh/Bin06AndItsSeemsALittieTooLate/SimpleStarryNight@main/color.ini",
+        "include": ["https://cdn.jsdelivr.net/gh/Bin06AndItsSeemsALittieTooLate/SimpleStarryNight@main/theme.js"],
         "readme": "README.md",
         "authors": [
             { "name": "Bin06AndItsSeemsALittieTooLate", "url": "https://github.com/Bin06AndItsSeemsALittieTooLate" }
