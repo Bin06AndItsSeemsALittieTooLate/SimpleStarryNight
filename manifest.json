@@ -5,7 +5,7 @@
         "preview": "assets/base.png",
         "usercss": "https://cdn.jsdelivr.net/gh/Bin06AndItsSeemsALittieTooLate/SimpleStarryNight@master/user.css",
         "schemes": "https://cdn.jsdelivr.net/gh/Bin06AndItsSeemsALittieTooLate/SimpleStarryNight@master/color.ini",
-        "include": "https://cdn.jsdelivr.net/gh/Bin06AndItsSeemsALittieTooLate/SimpleStarryNight@master/theme.js",
+        "include": ["https://cdn.jsdelivr.net/gh/Bin06AndItsSeemsALittieTooLate/SimpleStarryNight@master/theme.js"],
         "readme": "README.md",
         "authors": [
             { "name": "Bin06AndItsSeemsALittieTooLate", "url": "https://github.com/Bin06AndItsSeemsALittieTooLate" }
