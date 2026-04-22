@@ -213,7 +213,7 @@
   display: none;
 }
 .lyrics-lyricsContainer-LyricsContainer{
-  --lyrics-color-background: transparent;
+  --lyrics-color-background: transparent !important;
 }
 .Wrapper-sm-only, .Wrapper-small-only{
   transform: translateY(2px);
